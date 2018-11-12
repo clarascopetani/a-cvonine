@@ -13,6 +13,10 @@
 
 /**** LAYOUT ****/
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: var(--azul);
   background-image: url(../images/main-background.svg), url(../images/main-background.svg), url(../images/formas.svg);
@@ -22,9 +26,11 @@ body {
   background-size: 100%, 100%, 40%;
   padding: 0;
   margin:0 ;
+  width: 100%;
 }
 
 aside#sidebar {
+  box-sizing:border-box;
   float: left;
   width:30%;
   margin-right: 5%;
@@ -32,11 +38,12 @@ aside#sidebar {
 }
 
 #container {
+  box-sizing:border-box;
   float: right;
-  width: 65%;
+  width: 70%;
+  margin-bottom: 3%;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  margin-bottom: 3%;
 }
 
 section {
@@ -62,7 +69,7 @@ nav {
 nav ol{
   font-family: "Mr Dafoe",sans-serif;
   color: var(--rosa);
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: normal;
 }
 
@@ -76,7 +83,7 @@ nav li a {
   text-decoration: none;
   font-family: "Montserrat", sans-sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
@@ -102,13 +109,16 @@ nav li:active {
 
 footer {
   clear: both;
-  width: 80%;
-  font-size: 11px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
   line-height: 1em;
-  margin: 1% 7%;
+  padding: 1% 7%;
 }
 
-footer p {color:var(--gris);}
+footer p {
+  color:var(--gris);
+}
 
 /**** TITULOS ****/
 
